@@ -1,0 +1,11 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    strategy: { matrix: { cc: [gcc, clang] } }
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y clang
+      - run: make CC=${{ matrix.cc }} examples san size
+      - run: build/example_host

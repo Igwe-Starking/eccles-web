@@ -1,0 +1,14 @@
+{
+  "name": "eccles-web",
+  "version": "1.0.0",
+  "description": "Web engine for microcontrollers: HTML, CSS and JavaScript in plain C99, one .h/.c/config, pluggable ui, network and file backends.",
+  "keywords": "web, html, css, javascript, browser, embedded, ui, esp32, stm32, rp2040, zephyr, arduino",
+  "repository": { "type": "git", "url": "https://github.com/igwe-starking/eccles-web.git" },
+  "authors": [ { "name": "Nwobodo Ecclesiastes", "url": "https://github.com/igwe-starking", "maintainer": true } ],
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "*",
+  "headers": "eccles_web.h",
+  "build": { "srcDir": "src", "includeDir": "src", "flags": ["-Iconfig"] },
+  "export": { "include": ["src", "config", "examples", "library.json", "library.properties", "LICENSE", "README.md", "CHANGELOG.md"] }
+}

@@ -1,0 +1,4 @@
+version: "1.0.0"
+description: "Web engine for microcontrollers: HTML, CSS and JavaScript. Plain C99, pluggable backends."
+url: https://github.com/igwe-starking/eccles-web
+license: MIT
